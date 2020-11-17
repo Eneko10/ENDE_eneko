@@ -19,14 +19,15 @@ public class menuak {
 			num1=sc.nextInt();
 			System.out.println("Introduzca otro numero");
 			num2=sc.nextInt();
-	System.out.println("La suma de los dos numeros es :" + num1 + " + " + num2 + " = " + (num1+num2));
+			suma(num,num1,num2);
+	
 		}
 		if (num==2) {
 			System.out.println("Introduzca un numero");
 			num1=sc.nextInt();
 			System.out.println("Introduzca otro numero");
 			num2=sc.nextInt();
-			System.out.println("La resta de los dos numeros es :" + num1 + " - " + num2 + " = " + (num1-num2));
+			resta(num,num1,num2);
 			
 		}
 		if (num==3) {
@@ -34,28 +35,64 @@ public class menuak {
 			num1=sc.nextInt();
 			System.out.println("Introduzca otro numero");
 			num2=sc.nextInt();
-			System.out.println("La multiplicacion de los dos numeros es :" + num1 + " x " + num2 + " = " + (num1*num2));
+			multiplicacion(num,num1,num2);
+			
 	}
 		if (num==4) {
 			System.out.println("Introduzca un numero");
 			num1=sc.nextInt();
 			System.out.println("Introduzca otro numero");
 			num2=sc.nextInt();
-			System.out.println("La division de los dos numeros es :" + num1 + " / " + num2 + " = " + (num1/num2));
+			division(num,num1,num2);
 	}
 		if (num==5) {
 			System.out.println("Introduzca un numero");
 			num1=sc.nextInt();
-			int i, fakt=1;
-			for (i=num1; i>=1; i--) {
-				fakt = fakt * i;
-			}
-			System.out.println("La factorial del numero es : " + fakt);
-			}
+			factorial(num1);
 			
+		}
 	}
-}	
+	public static void suma(int num, int num1, int num2) {
+	int suma=0;
+	
+	suma=num1+num2;
+	
+	System.out.println("La suma de los dos numeros es : " + suma);
+	}
+	public static void resta(int num, int num1, int num2) {
+		int resta=0;
 		
+		resta=num1-num2;
+		
+		System.out.println("La resta de los dos numeros es : " + resta);
+	
+	
+}	
+	public static void multiplicacion(int num, int num1, int num2) {
+		int multiplicacion=0;
+		
+		multiplicacion=num1*num2;
+		
+		System.out.println("La multiplicacion de los dos numeros es : " + multiplicacion);
+}
+	public static void division(int num, int num1, int num2) {
+		int division=0;
+		
+		division=num1/num2;
+		
+		System.out.println("La division de los dos numeros es : " + division );
+}
+	public static void factorial(int num1) {
+		int fakt=1;
+		for (int i=num1; i>=1; i--) {
+			
+			fakt= fakt*i;
+			
+			
+}
+		System.out.println("La factorial del numero es : " + fakt );
+	}
+}
 		
 	
 

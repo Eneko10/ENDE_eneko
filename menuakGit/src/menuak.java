@@ -11,6 +11,8 @@ public class menuak {
 		System.out.println("2.Segunda opcion resta de dos numeros");
 		System.out.println("3.Tercera opcion multiplicar dos numeros");
 		System.out.println("4.Cuarta opcion divison de dos numeros");
+		System.out.println("5.Quinta opcion factorial de un numero");
+
 		num=sc.nextInt();
 		if (num==1){
 			System.out.println("Introduzca un numero");
@@ -41,6 +43,16 @@ public class menuak {
 			num2=sc.nextInt();
 			System.out.println("La division de los dos numeros es :" + num1 + " / " + num2 + " = " + (num1/num2));
 	}
+		if (num==5) {
+			System.out.println("Introduzca un numero");
+			num1=sc.nextInt();
+			int i, fakt=1;
+			for (i=num1; i>=1; i--) {
+				fakt = fakt * i;
+			}
+			System.out.println("La factorial del numero es : " + fakt);
+			}
+			
 	}
 }	
 		
